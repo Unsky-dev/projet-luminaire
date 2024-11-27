@@ -84,3 +84,21 @@ theme: default
 - Développement en **TypeScript** avec **React Native**.
 - Multiplateforme avec une version web.
 - Motivation : "Je crois en mes talents de développeur !"
+
+---
+
+## Construction détails
+
+### Alimentation
+
+- **Méthodes** :
+  - Par le port USB.
+  - Par la broche 5V (choisie pour alimenter à la fois le microcontrôleur et la bande LED).
+- **Mise en œuvre** : Connexion d'un câble à un bloc chargeur.
+
+---
+
+### Connexion entre la bande LED et le microcontrôleur
+
+- Une seule connexion : le **data**.
+- **Branchement** : Sur le pin D1 du microcontrôleur.

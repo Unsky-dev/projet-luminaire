@@ -62,3 +62,14 @@ Nous allons utiliser le firmware WLED (car pourquoi réinventer la roue ?). WLED
 ### 3. Application
 
 L’application sera développée en TypeScript avec la librairie React Native, ce qui permettra de la rendre multiplateforme et même d’avoir une version web. Bien que je ne connais ni le langage, ni le framework, j’ai des bases en JavaScript et je crois en mes talents de développeur.
+
+
+## 6. Construction détails
+
+### 1. Alimentation
+
+Pour alimenter ce type de micro-contrôleur, il y a deux moyen. Soit par son port USB, soit par sa broche 5V. C'est ceci que nous allons utilisé afin de pouvoir alimenter et le processeur et la bande led en même temps sans devoir rajouter un module. Donc nous devons connecter un cable a un bloc chargeur.
+
+### 2. Connexion entre la bande led et le micro-contrôleur
+
+La seul connexion qu'il y a entre ces deux appareils est le data. Celui ci est branché sur le pin D1.
